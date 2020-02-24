@@ -1,0 +1,31 @@
+﻿<Window x:Class="PointsOfInterest.HotelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:rating="clr-namespace:PointsOfInterest"
+        mc:Ignorable="d"
+        Title="HotelWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Width="512" Height="214" Name="HotelImg" Margin="280,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.544,0.514" />
+
+        <rating:Rating Height="55"  VerticalAlignment="Center" Background="PaleTurquoise"  x:Name="HotelRate" Margin="22,333,648,31" />
+        <Button Content="Rate" Name="RateBtn" HorizontalAlignment="Left" Margin="170,350,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.429,1.434" Click="AddRate_Button" Height="27"/>
+        <Label Content=""  Name="HotelDes" HorizontalAlignment="Left" Height="76" Margin="212,274,0,0" VerticalAlignment="Top" Width="555" RenderTransformOrigin="0.496,0.973"/>
+        <Label Content=""  Name="HotelName"  HorizontalAlignment="Left" Height="26" Margin="357,229,0,0" VerticalAlignment="Top" Width="305" RenderTransformOrigin="0.494,0.786"/>
+        <Label Content=""  Name="HotelPlace"  HorizontalAlignment="Left" Height="26" Margin="22,288,0,0" VerticalAlignment="Top" Width="217" RenderTransformOrigin="0.494,0.786"/>
+        <rating:Rating  Background="PaleTurquoise" x:Name="AverageRate" IsEnabled="False" Margin="22,10,628,368" />
+        <Label Name="HotelPrice" Content="" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Height="35" Width="148" RenderTransformOrigin="0.533,0.587"/>
+        <TextBox HorizontalAlignment="Left" Height="61" Name="CommentVal"
+                 Margin="304,350,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334"/>
+        <Button Content="Add Comment" HorizontalAlignment="Left" Height="32" Margin="654,361,0,0" VerticalAlignment="Top" Width="103" Click="AddComment_Button"/>
+        <Button Content="View Comments" HorizontalAlignment="Left" Margin="22,149,0,0" VerticalAlignment="Top" Width="142" Click="ViewComments_Button" Height="29" RenderTransformOrigin="0.516,2.004"/>
+        <Button Content="Back To Hotels Page" HorizontalAlignment="Left" Height="35" Margin="22,189,0,0" VerticalAlignment="Top" Width="142" Click="BackToHotels_Button"/>
+        <Button Content="Delete your rate" Name="DeleteRateBtn" HorizontalAlignment="Left" Height="27" Margin="22,236,0,0" VerticalAlignment="Top" Width="142" Click="DeleteRateBtn_Click" RenderTransformOrigin="0.538,-0.023"/>
+
+        <Label Content="" Name="YourRateLabel" HorizontalAlignment="Left" Margin="22,62,0,0" VerticalAlignment="Top" Width="148"/>
+        <Label Content="Average Rate" HorizontalAlignment="Left" Height="32" Margin="179,19,0,0" VerticalAlignment="Top" Width="96"/>
+
+
+    </Grid>
+</Window>

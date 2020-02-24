@@ -1,0 +1,2 @@
+﻿Kensington;KensingtonImg.jpg;4-star hotel with 2 restaurants, near Kensington High Street;200;London
+The Sanctuary House Hotel;TheSanctuaryHouseHotelImg.jpg;3.5-star hotel with restaurant, near Westminster Abbey;320;London

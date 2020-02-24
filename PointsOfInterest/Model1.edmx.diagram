@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a295518b4ac142ed98beef05c30cb2a7" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="Model1.Comment" Width="1.5" PointX="9" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Hotel" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Museum" Width="1.5" PointX="6.875" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Place" Width="1.5" PointX="5.125" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Rates_Users_Hotels" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Rates_Users_Museums" Width="1.5" PointX="8.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Rates_Users_Places" Width="1.5" PointX="3.375" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.User" Width="1.5" PointX="0.875" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="Model1.FK__Comments__Fk_Hot__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK__Comments__Fk_Mus__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK__Comments__Fk_Pla__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Museum" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Place" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_user_hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_user_museum" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_user_place" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

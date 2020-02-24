@@ -1,0 +1,18 @@
+﻿<Window x:Class="PointsOfInterest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointsOfInterest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="474.209" Width="800">
+    <Grid>
+
+        <Button Content="Register"  Background="DarkSeaGreen" FontSize="30" 
+HorizontalAlignment="Left" Margin="212,60,0,0" VerticalAlignment="Top" Width="265" RenderTransformOrigin="0.913,1.203" Height="90" Click="Button_Click_1"/>
+        <Button Content="Login" HorizontalAlignment="Left"   FontSize="30" Background="LightGoldenrodYellow"
+                Margin="212,242,0,0" VerticalAlignment="Top" Width="265" Height="94" Click="Button_Click_2"/>
+
+    </Grid>
+
+</Window>

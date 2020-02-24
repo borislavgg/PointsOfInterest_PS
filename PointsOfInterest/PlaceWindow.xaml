@@ -1,0 +1,27 @@
+﻿<Window x:Class="PointsOfInterest.PlaceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:rating="clr-namespace:PointsOfInterest"
+        mc:Ignorable="d"
+        Title="PlaceWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Width="586" Height="214" Name="PlaceImg" Margin="181,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.544,0.514" />
+
+        <rating:Rating Height="38"  VerticalAlignment="Center" Background="PaleTurquoise" x:Name="PlaceRate" Margin="10,350,648,31" />
+        <Button Content="Rate" Name="RateBtn" HorizontalAlignment="Left" Margin="166,350,0,0" VerticalAlignment="Top" Width="83" RenderTransformOrigin="0.429,1.434" Click="AddRate_Button" Height="32"/>
+        <Label Content=""  Name="PlaceDes" HorizontalAlignment="Left" Height="76" Margin="221,274,0,0" VerticalAlignment="Top" Width="546" RenderTransformOrigin="0.496,0.973"/>
+        <Label Content=""  Name="PlaceName"  HorizontalAlignment="Left" Height="26" Margin="221,231,0,0" VerticalAlignment="Top" Width="305" RenderTransformOrigin="0.494,0.786"/>
+
+        <TextBox HorizontalAlignment="Left" Name="CommentVal" Height="50" Margin="269,355,0,0"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360"/>
+        <Button Content="Add Comment" HorizontalAlignment="Left" Margin="644,373,0,0" VerticalAlignment="Top" Width="138" Height="32" Click="AddComment_Button"/>
+        <Button Content="View Comments" HorizontalAlignment="Left" Height="25" Margin="10,139,0,0" VerticalAlignment="Top" Width="137" Click="ViewComments_Button"/>
+        <Button Content="Back To Places Page" HorizontalAlignment="Left" Height="33" Margin="10,191,0,0" VerticalAlignment="Top" Width="137" Click="BackToPlaces_Button"/>
+        <Button Content="Delete your rate" Name="DeleteRateBtn"  HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="137" Click="DeleteRateBtn_Click"/>
+        <rating:Rating Height="41"  IsEnabled="False"   x:Name="PlRate" VerticalAlignment="Center" Background="PaleTurquoise"  Margin="15,55,643,323" />
+        <Label Content=""  Name="YourRateLabel" HorizontalAlignment="Left" Height="33" Margin="10,285,0,0" VerticalAlignment="Top" Width="139"/>
+        <Label Content="Average Rate" HorizontalAlignment="Left" Height="40" Margin="15,10,0,0" VerticalAlignment="Top" Width="95"/>
+    </Grid>
+</Window>
